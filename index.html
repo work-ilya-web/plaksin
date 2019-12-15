@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="libs/fancybox/fancybox.css">
+    <link rel="stylesheet" href="libs/fullpage/fullpage.css">
+    <link rel="stylesheet" href="libs/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="libs/pace/pace.js"></script>
+    <script>
+       Pace.on('start', function() {});
+       Pace.on('done', function() {
+          var mainSliderRemoveShadow = setTimeout(function(){
+              $('.preloader').addClass('hidden');
+          }, 400);
+          var mainSliderRemoveHidden = setTimeout(function(){
+              $('.preloader').addClass('scale');
+          }, 1000);
+       });
+       Pace.on("update", function(percent){
+           percent = Math.round(percent)*0.01;
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div class="preloader" style="display: flex;">
+    <div class="preloader__box-1">
+        <div class="preloader__box">
+            <!--div class="preloader__line"></div-->
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 122.676 27.1" style="enable-background:new 0 0 122.676 27.1;">
+                <g>
+                    <path style="clip-path:url(#SVGID_2_);fill:#CC404B;" d="M118.719,7.722c2.193,0,3.957-1.621,3.957-3.813 c0-2.241-1.764-3.909-3.957-3.909c-2.24,0-4.004,1.668-4.004,3.909C114.715,6.101,116.479,7.722,118.719,7.722"/>
+                    <path style="clip-path:url(#SVGID_2_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M75.503,20.858l-4.251-0.034 c0.214,2.024,1.076,3.743,2.813,4.878c0.797,0.52,1.719,0.853,2.643,1.068c1.04,0.243,2.114,0.343,3.182,0.328 c1.925-0.026,4.214-0.451,5.821-1.562c1.485-1.027,2.183-2.486,2.183-4.279c0-2.778-1.772-4.183-4.296-4.84 c-0.743-0.193-1.51-0.277-2.273-0.35c-0.616-0.06-1.233-0.11-1.846-0.194c-0.575-0.079-1.149-0.185-1.694-0.384 c-0.797-0.289-1.502-0.821-1.502-1.744c0-0.103,0.005-0.206,0.025-0.307c0.097-0.513,0.457-0.893,0.904-1.137 c0.616-0.337,1.519-0.425,2.214-0.425c1.515,0,3.62,0.508,3.913,2.263l4.234-0.033c-0.218-1.951-1.136-3.483-2.869-4.463 c-1.48-0.836-3.53-1.129-5.213-1.129c-2.434,0-5.398,0.664-6.818,2.837c-0.558,0.854-0.805,1.831-0.805,2.846 c0,2.587,1.609,4.117,3.981,4.823c0.825,0.245,1.685,0.346,2.538,0.433c0.67,0.069,1.342,0.123,2.011,0.213 c0.611,0.083,1.223,0.191,1.805,0.405c0.724,0.266,1.352,0.766,1.352,1.6c0,0.144-0.017,0.293-0.06,0.431 c-0.019,0.059-0.042,0.117-0.069,0.174c-0.258,0.535-0.839,0.835-1.381,1.004c-0.669,0.21-1.385,0.274-2.083,0.27 c-0.58-0.003-1.161-0.057-1.73-0.172c-0.453-0.093-0.933-0.224-1.329-0.468C76.135,22.438,75.687,21.726,75.503,20.858 M24.828,26.488h4.778V1.491h-4.778V26.488z M58.313,1.53h-4.662v24.997h4.662v-3.7l3.16-3.372l5.152,7.072h5.273l-7.546-10.143 l6.844-7.299h-5.647l-7.236,8.029V1.53z M90.078,6.192h4.662V1.53h-4.662V6.192z M90.078,26.527h4.662V9.086h-4.662V26.527z M7.929,15.095V5.89h4.475c1.816,0,3.802,0.575,4.822,2.193c0.415,0.658,0.608,1.409,0.608,2.185c0,1.066-0.3,2.095-0.956,2.944 c-1.066,1.38-2.782,1.939-4.477,1.923L7.929,15.095z M0,15.098v4.399h3.041v6.991h4.888v-6.991h3.948 c3.419,0,7.019-1.036,9.125-3.905c1.143-1.555,1.644-3.407,1.644-5.324c0-1.893-0.506-3.722-1.665-5.238 c-1.979-2.586-5.251-3.539-8.389-3.539H3.041v13.606L0,15.098z M101.26,9.085h-3.692v17.442h4.662v-7.55 c0-0.42-0.003-0.84,0.006-1.26c0.024-1.055,0.121-2.189,0.639-3.131c0.407-0.741,1.019-1.246,1.797-1.566 c1.25-0.514,3.017-0.438,4.162,0.307c1.366,0.888,1.777,2.508,1.777,4.047v9.153h4.662v-9.604c0-2.567-0.79-5.177-2.852-6.835 c-0.796-0.641-1.725-1.083-2.716-1.328c-1.27-0.313-2.596-0.331-3.868-0.021c-1.165,0.284-2.245,0.835-3.165,1.603l-0.238,0.197 L101.26,9.085z M41.619,12.35c1.388,0,2.576,0.667,3.465,1.705c0.854,0.998,1.266,2.334,1.282,3.635 c0.016,1.312-0.37,2.671-1.214,3.693c-0.905,1.095-2.168,1.608-3.575,1.608c-2.882,0-4.942-2.4-4.942-5.205 C36.635,14.989,38.694,12.35,41.619,12.35 M47.077,26.488h3.691V9.085h-3.691l-1.185,1.468l-0.24-0.231 c-1.204-1.162-2.895-1.715-4.544-1.78c-0.904-0.035-1.815,0.073-2.686,0.316c-0.891,0.248-1.743,0.639-2.505,1.165 c-2.502,1.732-3.906,4.752-3.906,7.763c0,2.978,1.37,5.807,3.82,7.531c1.433,1.008,3.129,1.547,4.882,1.547 c1.002,0,2.007-0.135,2.969-0.418c0.774-0.228,1.528-0.552,2.204-0.994l0.231-0.151L47.077,26.488z"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrap flex">
+                <div class="header__first">
+                    <div class="header__burger"><span></span></div>
+                    <a href="#" class="header__logo">
+                        <img src="images/header/logo.svg" alt="">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul id="menu">
+                        <li data-menuanchor="section1"><a href="#section1">Главная</a></li>
+                        <li data-menuanchor="section2"><a href="#section2">О компании</a></li>
+                        <li data-menuanchor="section5"><a href="#section5">Продукты</a></li>
+                        <li data-menuanchor="section7"><a href="#section7">Кейсы</a></li>
+                        <li data-menuanchor="section8"><a href="#section8">Для кого</a></li>
+                        <li data-menuanchor="section9"><a href="#section9">FAQ</a></li>
+                        <li data-menuanchor="section11"><a href="#section11">Команда</a></li>
+                        <li data-menuanchor="section12"><a href="#section12">Контакты</a></li>
+                    </ul>
+                    <div class="header__menu-closed"><span></span></div>
+                </nav>
+                <div class="header__last flex">
+                    <a href="tel:+79857404827" class="header__phone">+7 985 740-48-27</a>
+                    <a href="#" class="header__btn" data-src="#callback-modal" data-fancybox data-modal="true">рассчитать проект</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="section-bg">
+        <img class="section-bg__top" src="images/main-bg/top-left.png" alt="">
+        <img class="section-bg__fon" src="images/main-bg/bg-black.png" alt="">
+        <img class="section-bg__bottom" src="images/main-bg/bottom-right.png" alt="">
+        <div class="section-bg-icon section-bg-icon_1">
+            <img src="images/main-bg/icon-1.svg" alt="">
+        </div>
+        <div class="section-bg-icon section-bg-icon_2">
+            <img src="images/main-bg/icon-2.svg" alt="">
+        </div>
+        <div class="section-bg-icon section-bg-icon_3">
+            <img src="images/main-bg/icon-3.svg" alt="">
+        </div>
+        <div class="section-bg-icon section-bg-icon_4">
+            <img src="images/main-bg/icon-4.svg" alt="">
+        </div>
+        <div class="section-bg-circle section-bg-circle_1">
+            <img src="images/main-bg/circle-1.png" alt="">
+        </div>
+        <div class="section-bg-circle section-bg-circle_2">
+            <img src="images/main-bg/circle-2.png" alt="">
+        </div>
+        <div class="section-bg-circle section-bg-circle_3">
+            <img src="images/main-bg/circle-3.png" alt="">
+        </div>
+        <div class="section-bg-circle section-bg-circle_4">
+            <img src="images/main-bg/circle-4.svg" alt="">
+        </div>
+        <div class="section-bg-circle section-bg-circle_5">
+            <img src="images/main-bg/circle-5.svg" alt="">
+        </div>
+        <div class="background">
+            <video class="background-box background-box_1 active" id="main-video" pip="false" autoplay="1" muted="muted" loop="" preload="metadata" playsinline="" webkit-playsinline="" poster="images/promo/bg.jpg">
+                <source src="images/video.mp4" type="video/mp4">
+                <source src="images/video.webm" type="video/webm">
+            </video>
+            <div class="background-box background-box_5">
+                <img src="images/case/bg.png" alt="">
+            </div>
+            <div class="background-box background-box_7">
+                <div class="background-box__slick">
+                    <div class="background-box__slide">
+                        <img src="images/cases/bg.jpg" alt="">
+                    </div>
+                    <div class="background-box__slide">
+                        <img src="images/cases/bg-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fullpage" class="fullpage">
+        
+        <div id="section1" class="section promo">
+            <div class="section-title">You<br> Tube</div>
+            <video class="promo-video" id="main-video" pip="false" autoplay="1" muted="muted" loop="" preload="metadata" playsinline="" webkit-playsinline="" poster="images/promo/bg.jpg">
+                <source src="images/video.mp4" type="video/mp4">
+                <source src="images/video.webm" type="video/webm">
+            </video>
+            <div class="wrapper">
+                <div class="promo__wrap flex">
+                    <div class="promo__left">
+                        <div class="caption">под ключ</div>
+                        <div class="promo__title">Создаём, ведём и продвигаем YouTube-каналы</div>
+                        <div class="promo__subtitle">C нами сотрудничают известные блоггеры и компании</div>
+                        <div class="promo__bottom flex">
+                            <a href="#" class="promo__btn btn">бесплатная консультация</a>
+                            <div class="promo__desc">За пару минут, разберем ваши задачи, расскажем о способах их решения<br> и рассчитаем стоимость проекта.</div>
+                        </div>
+                    </div>
+                    <div class="promo__right">
+                        <div class="video">
+                            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__btn" data-fancybox="promo-video">
+                                <span></span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                        <polygon points="0,0 0,552.029 405,276.015 "/>
+                                    </svg>
+                                </i>
+                            </a>
+                            <div class="video__caption">посмотрите видео</div>
+                            <div class="video__name">5 пунктов по улучшению YouTube-канала</div>
+                            <div class="video__time">1:45 мин</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section2" class="section about">
+            <div class="section-title">О нас</div>
+            <div class="wrapper">
+                <div class="about__wrap flex">
+                    <div class="about__left">
+                        <div class="caption">Plaksin Media</div>
+                        <div class="title">креативное<br> агентство по созданию  YouTube контента</div>
+                        <div class="subtitle">Наша главная задача — сделать YouTube контент эффективным каналом маркетинга. Нам важен результат, поэтому мы работаем исключительно на него:</div>
+                        <div class="about__list">
+                            <ul>
+                                <li>Рост подписчиков и просмотров на канале</li>
+                                <li>Формирование репутации лидера в своей нише</li>
+                                <li>Выстраивание систем получения лидов</li>
+                                <li>Увеличение продаж с трафика канала</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__item">
+                            <div class="about-items flex">
+                                <div class="about-items__value"><span id="views">0</span> млн</div>
+                                <div class="about-items__desc">просмотров  самого вирусного  нашего ролика</div>
+                            </div>
+                            <div class="about-items flex">
+                                <div class="about-items__value"><span id="subscribers">0</span> тыс</div>
+                                <div class="about-items__desc">новых подписчиков за одну  коллаборацию</div>
+                            </div>
+                            <div class="about-items flex">
+                                <div class="about-items__value"><span id="conversion">0</span> %</div>
+                                <div class="about-items__desc">конверсия перехода на сайт<br> с выпуска</div>
+                            </div>
+                            <div class="about-items flex">
+                                <div class="about-items__value"><span id="comments">0</span> ТЫС</div>
+                                <div class="about-items__desc">комментариев под одним<br> из выпусков</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3" class="section main launch">
+            <div class="section-title">запуск</div>
+            <div class="slide" data-anchor="slide1">
+                <div class="wrapper">
+                    <div class="main__wrap flex">
+                        <div class="main__left">
+                            <div class="title">Канал под ключ</div>
+                            <div class="main__subtitle">Комплекс услуг по запуску<br> Youtube канала</div>
+                            <div class="main__text">
+                                <p>Разработка стратегии, создание концепции канала, дизайн оформление, а так же полный продакшн, постпродакшн и запуск<br> с дальнейшим продвижением.</p>
+                                <p>Результатом данной работы будет решение задачи, которую Вы хотите закрыть с помощью YouTube канала, а именно будет понятна стратегия достижения поставленной цели.</p>
+                            </div>
+                            <a href="#" class="main__btn btn btn_small">Заказать услугу</a>
+                        </div>
+                        <div class="main__right">
+                            <div class="main__right-conten flex">
+                                <div class="main__content">
+                                    <div class="main__block active">
+                                        <div class="main__item">
+                                            <div class="main__items">Создание образов и идей</div>
+                                            <div class="main__items">Разработка сюжетных линий</div>
+                                            <div class="main__items">Подготовка контент-плана</div>
+                                            <div class="main__items">Написание сценариев</div>
+                                        </div>
+                                    </div>
+                                    <div class="main__block">
+                                        <div class="main__item">
+                                            <div class="main__items">Создание образов и идей 2</div>
+                                            <div class="main__items">Разработка сюжетных линий</div>
+                                            <div class="main__items">Подготовка контент-плана</div>
+                                            <div class="main__items">Написание сценариев</div>
+                                        </div>
+                                    </div>
+                                    <div class="main__block">
+                                        <div class="main__item">
+                                            <div class="main__items">Создание образов и идей 3</div>
+                                            <div class="main__items">Разработка сюжетных линий</div>
+                                            <div class="main__items">Подготовка контент-плана</div>
+                                            <div class="main__items">Написание сценариев</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__box">
+                                    <div class="main__caption">Комплекс услуг</div>
+                                    <div class="main__tabs">
+                                        <div class="main__tab active">Креативная концепция</div>
+                                        <div class="main__tab">Позиционирование и анализ</div>
+                                        <div class="main__tab">Полный продакшн</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text__right">
+                                <div class="main-arrow main-arrow_next">
+                                    <span>Процесс производства</span>
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                            <g>
+                                                <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <div class="wrapper">
+                    <div class="main-body">
+                        <div class="title">Процесс производства </div>
+                        <div class="main-body__content">
+                            <div class="main-body__circle"></div>
+                            <div class="main-body__line"></div>
+                            <div class="main-body__line-mobile"></div>
+                            <div class="main-body__arrow">
+                                <img src="images/icons/main-body-arrow.svg" alt="">
+                            </div>
+                            <div class="main-body__row flex">
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Брифинг и обсуждение деталей проекта</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Конкурентный и маркетинговый анализ</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Разработка креативной концепции</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Разработка фирменного стиля и дизайна канала и моушн-дизайн</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Концепция продвжения выпусков</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Съемки</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Продакшн</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Постпродакшн</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Выход<br> в сеть</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Анализ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__left">
+                        <div class="main-arrow main-arrow_prev">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                    <g>
+                                        <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                    </g>
+                                </svg>
+                            </i>
+                            <span>подробнее об услуге</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section4" class="section main management">
+            <div class="section-title">Ведение</div>
+            <div class="slide" data-anchor="slide1">
+                <div class="wrapper">
+                    <div class="main__wrap flex">
+                        <div class="main__left">
+                            <div class="title">Ведение канала </div>
+                            <div class="main__subtitle">выведем канал из застоя и дадим ему<br> второе дыхание</div>
+                            <div class="main__text">
+                                <p>Корректируем существующий формат канала, за счет изменения концепции и доработки стратегии. Делаем из вашего канала лидера<br> в вашей тематике. </p>
+                                <p>Увеличиваем количество просмотров и новых подписчиков за счет съемки контента, который будет интересен вашей целевой аудитории.</p>
+                            </div>
+                            <a href="#" class="main__btn btn btn_small">Заказать услугу</a>
+                        </div>
+                        <div class="main__right">
+                            <div class="main__right-conten flex">
+                                <div class="main__content">
+                                    <div class="main__block active">
+                                        <div class="main__item">
+                                            <div class="main__items">Разработка новых форматов</div>
+                                            <div class="main__items">Разработка сюжетных линий</div>
+                                            <div class="main__items">Подготовка контент-плана</div>
+                                            <div class="main__items">Написание сценариев</div>
+                                        </div>
+                                    </div>
+                                    <div class="main__block">
+                                        <div class="main__item">
+                                            <div class="main__items">Разработка новых форматов 2</div>
+                                            <div class="main__items">Разработка сюжетных линий</div>
+                                            <div class="main__items">Подготовка контент-плана</div>
+                                            <div class="main__items">Написание сценариев</div>
+                                        </div>
+                                    </div>
+                                    <div class="main__block">
+                                        <div class="main__item">
+                                            <div class="main__items">Разработка новых форматов 3</div>
+                                            <div class="main__items">Разработка сюжетных линий</div>
+                                            <div class="main__items">Подготовка контент-плана</div>
+                                            <div class="main__items">Написание сценариев</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__box">
+                                    <div class="main__caption">Комплекс услуг</div>
+                                    <div class="main__tabs">
+                                        <div class="main__tab active">Креативная концепция</div>
+                                        <div class="main__tab">Позиционирование и анализ</div>
+                                        <div class="main__tab">Полный продакшн</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text__right">
+                                <div class="main-arrow main-arrow_next">
+                                    <span>Процесс производства</span>
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                            <g>
+                                                <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <div class="wrapper">
+                    <div class="main-body">
+                        <div class="title">Процесс производства </div>
+                        <div class="main-body__content">
+                            <div class="main-body__circle"></div>
+                            <div class="main-body__line"></div>
+                            <div class="main-body__line-mobile"></div>
+                            <div class="main-body__arrow">
+                                <img src="images/icons/main-body-arrow.svg" alt="">
+                            </div>
+                            <div class="main-body__row flex">
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Брифинг и обсуждение деталей проекта</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Выявление задач<br> и возможных<br> точек роста проекта</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Конкурентный и маркенговый анализ</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Разработка креативной концепции</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">План продвижения</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Написание сценария</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Съемки</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Постпродакшн</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Выход<br> в сеть</div>
+                                </div>
+                                <div class="main-body__coll">
+                                    <div class="main-body__caption">Анализ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__left">
+                        <div class="main-arrow main-arrow_prev">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                    <g>
+                                        <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                    </g>
+                                </svg>
+                            </i>
+                            <span>подробнее об услуге</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section5" class="section main case">
+            <div class="slide case-slide case-slide_1" data-anchor="slide1">
+                <div class="case-bg">
+                    <img src="images/case/bg.png" alt="">
+                </div>
+                <div class="section-title">Вирус</div>
+                <div class="wrapper">
+                    <div class="main__wrap flex">
+                        <div class="main__left">
+                            <div class="title">вирусный продукт</div>
+                            <div class="main__subtitle">Формат предназначен для продукта, которому<br> требуетсямаксимальный охват и количество<br> просмотров</div>
+                            <div class="main__text">
+                                <p>Это для тех, кто хочет максимально осветить свой продукт /услугу/компанию в рамках Youtube. Так, чтобы хайпануть и получить много просмотров и обсуждений.</p>
+                                <p>Мы сделаем что-то выходящее за рамки обычного контента. Интегрируем ваш продукт в формат нового шоу, в котором всё будет завязано на продукте. Либо придуем прецендент и распишем сюжетную линию для продолжительного хайпа.</p>
+                                <p>Можем гарантировать необходимые результаты, исходя из предполагаемого рекламного бюджета.</p>
+                            </div>
+                            <a href="#" class="main__btn btn btn_big">Разработать вирусный контент</a>
+                        </div>
+                        <div class="main__right main__right_case">
+                            <div class="main__block">
+                                <div class="main__right_case-bg" id="bgBlur">
+                                    <img src="images/case/bg.png" alt="">
+                                </div>
+                                <div class="main__item">
+                                    <div class="main__items">Продуманный вирусный контент</div>
+                                    <div class="main__items">Создание инфоповодов</div>
+                                    <div class="main__items">Делаем продукт узнаваемым</div>
+                                    <div class="main__items">Коллаборации с блогерами</div>
+                                </div>
+                            </div>
+                            <div class="dynamite">
+                                <img src="images/case/dynamite.png" alt="">
+                            </div>
+                            <div class="text__right">
+                                <div class="main-arrow main-arrow_next">
+                                    <span>пример кейса</span>
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                            <g>
+                                                <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                            </g>
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide case-slide collaboration" data-anchor="slide2">
+                <div class="collaboration-img">
+                    <img src="images/collaboration/img.png" alt="">
+                </div>
+                <div class="section-title">кейс</div>
+                <div class="wrapper">
+                    <div class="collaboration__body">
+                        <div class="collaboration__wrap flex">
+                            <div class="collaboration__left">
+                                <div class="title">Коллаборация с блогером<br> Афоня TV</div>
+                                <div class="collaboration__subtitle">Чтобы максимально запомниться, решили подарить этому блогеру мотоцикл за 2 млн рублей. В первом выпуске мы дарим мотоцикл. Во-втором - мы его разбиваем. Создается второй инфоповод, который начинают обсуждать еще больше. Многие блогеры из мотосферы начинают снимать видео - постанова это было или нет. Во многих сообществах ВКонтакте было горячее обсуждение всей это темы.</div>
+                                <div class="collaboration__box">
+                                    <div class="collaboration__anons">Ролики, которые снимали на Youtube другие каналы, касаемо этого инцидента:</div>
+                                    <div class="collaboration__links flex">
+                                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration__link" data-fancybox="collaboration-1">видео</a>
+                                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration__link" data-fancybox="collaboration-2">видео</a>
+                                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration__link" data-fancybox="collaboration-3">видео</a>
+                                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration__link" data-fancybox="collaboration-4">видео</a>
+                                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration__link" data-fancybox="collaboration-5">видео</a>
+                                        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration__link" data-fancybox="collaboration-6">видео</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collaboration__right">
+                                <div class="collaboration__block">
+                                    <div class="collaboration__caption">Видео у Афони</div>
+                                    <div class="collaboration-video flex">
+                                        <div class="collaboration-video__box">
+                                            <div class="collaboration-video__img">
+                                                <img src="images/collaboration/video-1.jpg" alt="">
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration-video__play" data-fancybox="collaboration-video-1">
+                                                <i>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                                        <polygon points="0,0 0,552.029 405,276.015 "/>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                        </div>
+                                        <div class="collaboration-video__box">
+                                            <div class="collaboration-video__img">
+                                                <img src="images/collaboration/video-2.jpg" alt="">
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration-video__play" data-fancybox="collaboration-video-1">
+                                                <i>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                                        <polygon points="0,0 0,552.029 405,276.015 "/>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="collaboration__block">
+                                    <div class="collaboration__caption">Видео у Егора</div>
+                                    <div class="collaboration-video flex">
+                                        <div class="collaboration-video__box">
+                                            <div class="collaboration-video__img">
+                                                <img src="images/collaboration/video-3.jpg" alt="">
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration-video__play" data-fancybox="collaboration-video-2">
+                                                <i>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                                        <polygon points="0,0 0,552.029 405,276.015 "/>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                        </div>
+                                        <div class="collaboration-video__box">
+                                            <div class="collaboration-video__img">
+                                                <img src="images/collaboration/video-4.jpg" alt="">
+                                            </div>
+                                            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="collaboration-video__play" data-fancybox="collaboration-video-2">
+                                                <i>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                                        <polygon points="0,0 0,552.029 405,276.015 "/>
+                                                    </svg>
+                                                </i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collaboration-bottom flex">
+                            <div class="collaboration-bottom__box flex">
+                                <div class="collaboration-bottom__value"><span>250</span> тыс</div>
+                                <div class="collaboration-bottom__desc">подписчиков на канал  Егора в результате этой коллаборации</div>
+                            </div>
+                            <div class="collaboration-bottom__box flex">
+                                <div class="collaboration-bottom__value"><span>178</span> тыс</div>
+                                <div class="collaboration-bottom__desc">комментариев под одним выпуском в результате  коллаборации</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text__left">
+                        <div class="main-arrow main-arrow_prev">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                    <g>
+                                        <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                    </g>
+                                </svg>
+                            </i>
+                            <span>подробнее об услуге</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section6" class="section order">
+            <div class="wrapper">
+                <div class="order__wrap">
+                    <div class="caption">бесплатная консультация</div>
+                    <div class="title">Оставьте свои контактные данные,<br> менеджер расскажет о наших возможностях<br> и подберет лучшее решение для вас</div>
+                    <form action="#" class="order__form">
+                        <div class="order__top flex">
+                            <label class="order__label">
+                                <div class="order__icon">
+                                    <img src="images/icons/man.svg" alt="">
+                                    <img src="images/icons/man-active.svg" alt="">
+                                </div>
+                                <input type="text" name="name" class="order__field field" placeholder="Александ">
+                            </label>
+                            <label class="order__label">
+                                <div class="order__icon">
+                                    <img src="images/icons/phone.svg" alt="">
+                                    <img src="images/icons/phone-active.svg" alt="">
+                                </div>
+                                <input type="text" name="phone" class="order__field field phone-mask" placeholder="Номер телефона">
+                            </label>
+                        </div>
+                        <div class="order__bottom flex">
+                            <button class="order__btn btn">Заказать консультацию</button>
+                            <div class="agreement">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div id="section7" class="section cases">
+            <div class="section-title">кейсы</div>
+            <div class="wrapper">
+                <div class="cases__wrap flex">
+                    <div class="cases__left">
+                        <div class="title">Кейсы</div>
+                        <div class="cases__desc">Мы с радостью беремся за задачи любого уровня. 85% наших клиентов сотрудничают с нами более<br> 3 лет и мы считаем это одним из главных критериев качества нашей работы.</div>
+                        <a href="#" class="cases__btn btn">Заказать консультацию</a>
+                    </div>
+                    <div class="cases__right">
+                        <div class="cases__slick">
+                            <div class="cases__slide">
+                                <div class="cases__caption">Сами Насери сопровождение<br> по созданию YouTube контента</div>
+                                <div class="video">
+                                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__btn" data-fancybox="cases-video">
+                                        <span></span>
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                                <polygon points="0,0 0,552.029 405,276.015 "/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <div class="video__name">Сопровождение по созданию YouTube контента.<br> Увеличение вовлеченности просмотра с 11 до 20 минут.<br> Разработка нового оформления канала.</div>
+                                </div>
+                                <div class="cases-result flex">
+                                    <div class="cases-result__box">+2 000 000 ПРОСМОТРОВ</div>
+                                    <div class="cases-result__box">+150 000 ПОДПИСЧИКОВ</div>
+                                </div>
+                            </div>
+                            <div class="cases__slide">
+                                <div class="cases__caption">АФОНЯ TV сопровождение<br> по созданию YouTube контента</div>
+                                <div class="video">
+                                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__btn" data-fancybox="cases-video">
+                                        <span></span>
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                                <polygon points="0,0 0,552.029 405,276.015 "/>
+                                            </svg>
+                                        </i>
+                                    </a>
+                                    <div class="video__name">Сопровождение по созданию YouTube контента.<br> Увеличение вовлеченности просмотра с 11 до 20 минут.<br> Разработка нового оформления канала.</div>
+                                </div>
+                                <div class="cases-result flex">
+                                    <div class="cases-result__box">+250 000 ПОДПИСЧИКОВ</div>
+                                    <div class="cases-result__box">+178 000 комментариев</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cases__bottom flex">
+                            <div class="cases-arrow cases-arrow_prev">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                        <g>
+                                            <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span>Предыдущий кейс</span>
+                            </div>
+                            <div class="cases-arrow cases-arrow_next">
+                                <span>Следующий кейс</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                        <g>
+                                            <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                        </g>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="background-box background-box_cases">
+                <div class="background-box__slick">
+                    <div class="background-box__slide">
+                        <img src="images/cases/bg.jpg" alt="">
+                    </div>
+                    <div class="background-box__slide">
+                        <img src="images/cases/bg-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section8" class="section whom">
+            <div class="wrapper">
+                <div class="whom__wrap">
+                    <div class="title">Для кого наши услуги</div>
+                    <div class="whom__body">
+                        <div class="whom__slick">
+                            <div class="whom__slide">
+                                <div class="whom__items">
+                                    <div class="whom__box">
+                                        <div class="whom__name">Хотите войти<br> в медиа-сферу?</div>
+                                        <a href="#" class="whom__link">Оставить заявку</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whom__slide">
+                                <div class="whom__items">
+                                    <div class="whom__box">
+                                        <div class="whom__name">Хотите показать<br> продукт целевой аудитории?</div>
+                                        <a href="#" class="whom__link">Оставить заявку</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whom__slide">
+                                <div class="whom__items">
+                                    <div class="whom__box">
+                                        <div class="whom__name">Хотите обновить<br> свой YouTube-канал?</div>
+                                        <a href="#" class="whom__link">Оставить заявку</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="whom__slide">
+                                <div class="whom__items">
+                                    <div class="whom__box">
+                                        <div class="whom__name">Хотите показать<br> продукт целевой аудитории?</div>
+                                        <a href="#" class="whom__link">Оставить заявку</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whom__button flex">
+                            <div class="whom-arrow whom-arrow_prev">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                        <g>
+                                            <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span>Назад</span>
+                            </div>
+                            <div class="whom-arrow whom-arrow_next">
+                                <span>дальше</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                        <g>
+                                            <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                        </g>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section9" class="section faq">
+            <div class="wrapper">
+                <div class="faq__wrap">
+                    <div class="title">ответы на частые вопросы </div>
+                    <div class="faq__flex flex">
+                        <div class="faq__coll">
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Сколько человек в команде?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Почему нет цен?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Возможна ли аэросъемка?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Создаете ли 3D анимацию?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                        </div>
+                        <div class="faq__coll">
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Сколько по времени занимает съемка и монтаж выпуска?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Даете ли гарантии?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Занимаетесь ли съемкой рекламных роликов?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                            <div class="faq__box">
+                                <div class="faq__top flex">
+                                    <div class="faq__caption">Работаете ли по договору?</div>
+                                    <div class="faq__icon">
+                                        <img src="images/icons/faq-1.svg" alt="">
+                                        <img src="images/icons/faq-2.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="faq__text">На данный момент в команде 12 человек</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section10" class="section order">
+            <div class="wrapper">
+                <div class="order__wrap">
+                    <div class="order__row flex">
+                        <div class="order__coll">
+                            <div class="caption">станьте лидером</div>
+                            <div class="title">Почему бы вам не стать первым, кто это сделает и диктовать тренды<br> в своей нише?</div>
+                            <div class="order__desc">Скажем вам по секрету, если присмотреться, то практически в любой нише на территории СНГ в Youtube представлено минимум компаний. А хорошо упакованных чаще всего просто нет.</div>
+                        </div>
+                        <div class="order__column">
+                            <form action="#" class="order__form">
+                                <div class="order__top">
+                                    <label class="order__label">
+                                        <div class="order__icon">
+                                            <img src="images/icons/man.svg" alt="">
+                                            <img src="images/icons/man-active.svg" alt="">
+                                        </div>
+                                        <input type="text" name="name" class="order__field field" placeholder="Александ">
+                                    </label>
+                                    <label class="order__label">
+                                        <div class="order__icon">
+                                            <img src="images/icons/phone.svg" alt="">
+                                            <img src="images/icons/phone-active.svg" alt="">
+                                        </div>
+                                        <input type="text" name="phone" class="order__field field phone-mask" placeholder="Номер телефона">
+                                    </label>
+                                </div>
+                                <div class="order__bottom">
+                                    <button class="order__btn btn">Заказать консультацию</button>
+                                    <div class="agreement">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных.</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section11" class="section team">
+            <div class="wrapper">
+                <div class="team__wrap">
+                    <div class="title">наша команда</div>
+                    <div class="team__body">
+                        <div class="team__top flex">
+                            <div class="team-arrow team-arrow_prev">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                        <g>
+                                            <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                        </g>
+                                    </svg>
+                                </i>
+                                <span>Назад</span>
+                            </div>
+                            <div class="team-arrow team-arrow_next">
+                                <span>дальше</span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 477.175 477.175" style="enable-background:new 0 0 477.175 477.175;">
+                                        <g>
+                                            <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"/>
+                                        </g>
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="team__slick">
+                            <div class="team__slide">
+                                <div class="team__items">
+                                    <div class="team__img">
+                                        <a href="images/team/img-1.jpg" data-fancybox="team">
+                                            <img src="images/team/img-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="team__box">
+                                        <div class="team__name">Плаксин Николай</div>
+                                        <div class="team__value">Founder, producer</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__slide">
+                                <div class="team__items">
+                                    <div class="team__img">
+                                        <a href="images/team/img-2.jpg" data-fancybox="team">
+                                            <img src="images/team/img-2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="team__box">
+                                        <div class="team__name">Антонов Семен</div>
+                                        <div class="team__value">CEO</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__slide">
+                                <div class="team__items">
+                                    <div class="team__img">
+                                        <a href="images/team/img-3.jpg" data-fancybox="team">
+                                            <img src="images/team/img-3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="team__box">
+                                        <div class="team__name">Аминов Никита</div>
+                                        <div class="team__value">Режиссер</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__slide">
+                                <div class="team__items">
+                                    <div class="team__img">
+                                        <a href="images/team/img-3.jpg" data-fancybox="team">
+                                            <img src="images/team/img-3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="team__box">
+                                        <div class="team__name">Аксютко Елена</div>
+                                        <div class="team__value">Project manager</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team__slide">
+                                <div class="team__items">
+                                    <div class="team__img">
+                                        <a href="images/team/img-1.jpg" data-fancybox="team">
+                                            <img src="images/team/img-1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="team__box">
+                                        <div class="team__name">Плаксин Николай</div>
+                                        <div class="team__value">Founder, producer</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team__video">
+                        <div class="team__video-bg">
+                            <img src="images/team/video-bg.jpg" alt="">
+                        </div>
+                        <div class="team__video-box">
+                            <div class="team__caption">команда</div>
+                            <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="team__video-play" data-fancybox="team-video">
+                                <span></span>
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 276.014 552.028" style="enable-background:new 0 0 276.014 552.028; fill: #363636;">
+                                        <polygon points="0,0 0,552.029 405,276.015 "/>
+                                    </svg>
+                                </i>
+                            </a>
+                            <div class="team__caption team__caption_red">plaksin media</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section12" class="section contacts">
+            <div class="wrapper">
+                <div class="contacts__wrap">
+                    <div class="title">Контакты </div>
+                    <a href="tel:+7 985 740-48-27" class="contacts__phone">+7 985 740-48-27</a>
+                    <a href="mailto:info@plaksinmedia.ru" class="contacts__mail">info@plaksinmedia.ru</a>
+                    <a href="#" class="contacts__btn btn">оставить заявку</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__wrap flex">
+                <div class="footer__copiright">© Plaksin. 2019. Все права защищены</div>
+                <div class="footer-social flex">
+                    <a href="#" class="footer-social__link">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="548.358px" height="548.358px" viewBox="0 0 548.358 548.358" style="enable-background:new 0 0 548.358 548.358; fill: #908e8f;">
+                                <g>
+                                    <path d="M545.451,400.298c-0.664-1.431-1.283-2.618-1.858-3.569c-9.514-17.135-27.695-38.167-54.532-63.102l-0.567-0.571 l-0.284-0.28l-0.287-0.287h-0.288c-12.18-11.611-19.893-19.418-23.123-23.415c-5.91-7.614-7.234-15.321-4.004-23.13 c2.282-5.9,10.854-18.36,25.696-37.397c7.807-10.089,13.99-18.175,18.556-24.267c32.931-43.78,47.208-71.756,42.828-83.939 l-1.701-2.847c-1.143-1.714-4.093-3.282-8.846-4.712c-4.764-1.427-10.853-1.663-18.278-0.712l-82.224,0.568 c-1.332-0.472-3.234-0.428-5.712,0.144c-2.475,0.572-3.713,0.859-3.713,0.859l-1.431,0.715l-1.136,0.859 c-0.952,0.568-1.999,1.567-3.142,2.995c-1.137,1.423-2.088,3.093-2.848,4.996c-8.952,23.031-19.13,44.444-30.553,64.238 c-7.043,11.803-13.511,22.032-19.418,30.693c-5.899,8.658-10.848,15.037-14.842,19.126c-4,4.093-7.61,7.372-10.852,9.849 c-3.237,2.478-5.708,3.525-7.419,3.142c-1.715-0.383-3.33-0.763-4.859-1.143c-2.663-1.714-4.805-4.045-6.42-6.995 c-1.622-2.95-2.714-6.663-3.285-11.136c-0.568-4.476-0.904-8.326-1-11.563c-0.089-3.233-0.048-7.806,0.145-13.706 c0.198-5.903,0.287-9.897,0.287-11.991c0-7.234,0.141-15.085,0.424-23.555c0.288-8.47,0.521-15.181,0.716-20.125 c0.194-4.949,0.284-10.185,0.284-15.705s-0.336-9.849-1-12.991c-0.656-3.138-1.663-6.184-2.99-9.137 c-1.335-2.95-3.289-5.232-5.853-6.852c-2.569-1.618-5.763-2.902-9.564-3.856c-10.089-2.283-22.936-3.518-38.547-3.71 c-35.401-0.38-58.148,1.906-68.236,6.855c-3.997,2.091-7.614,4.948-10.848,8.562c-3.427,4.189-3.905,6.475-1.431,6.851 c11.422,1.711,19.508,5.804,24.267,12.275l1.715,3.429c1.334,2.474,2.666,6.854,3.999,13.134c1.331,6.28,2.19,13.227,2.568,20.837 c0.95,13.897,0.95,25.793,0,35.689c-0.953,9.9-1.853,17.607-2.712,23.127c-0.859,5.52-2.143,9.993-3.855,13.418 c-1.715,3.426-2.856,5.52-3.428,6.28c-0.571,0.76-1.047,1.239-1.425,1.427c-2.474,0.948-5.047,1.431-7.71,1.431 c-2.667,0-5.901-1.334-9.707-4c-3.805-2.666-7.754-6.328-11.847-10.992c-4.093-4.665-8.709-11.184-13.85-19.558 c-5.137-8.374-10.467-18.271-15.987-29.691l-4.567-8.282c-2.855-5.328-6.755-13.086-11.704-23.267 c-4.952-10.185-9.329-20.037-13.134-29.554c-1.521-3.997-3.806-7.04-6.851-9.134l-1.429-0.859c-0.95-0.76-2.475-1.567-4.567-2.427 c-2.095-0.859-4.281-1.475-6.567-1.854l-78.229,0.568c-7.994,0-13.418,1.811-16.274,5.428l-1.143,1.711 C0.288,140.146,0,141.668,0,143.763c0,2.094,0.571,4.664,1.714,7.707c11.42,26.84,23.839,52.725,37.257,77.659 c13.418,24.934,25.078,45.019,34.973,60.237c9.897,15.229,19.985,29.602,30.264,43.112c10.279,13.515,17.083,22.176,20.412,25.981 c3.333,3.812,5.951,6.662,7.854,8.565l7.139,6.851c4.568,4.569,11.276,10.041,20.127,16.416 c8.853,6.379,18.654,12.659,29.408,18.85c10.756,6.181,23.269,11.225,37.546,15.126c14.275,3.905,28.169,5.472,41.684,4.716h32.834 c6.659-0.575,11.704-2.669,15.133-6.283l1.136-1.431c0.764-1.136,1.479-2.901,2.139-5.276c0.668-2.379,1-5,1-7.851 c-0.195-8.183,0.428-15.558,1.852-22.124c1.423-6.564,3.045-11.513,4.859-14.846c1.813-3.33,3.859-6.14,6.136-8.418 c2.282-2.283,3.908-3.666,4.862-4.142c0.948-0.479,1.705-0.804,2.276-0.999c4.568-1.522,9.944-0.048,16.136,4.429 c6.187,4.473,11.99,9.996,17.418,16.56c5.425,6.57,11.943,13.941,19.555,22.124c7.617,8.186,14.277,14.271,19.985,18.274 l5.708,3.426c3.812,2.286,8.761,4.38,14.853,6.283c6.081,1.902,11.409,2.378,15.984,1.427l73.087-1.14 c7.229,0,12.854-1.197,16.844-3.572c3.998-2.379,6.373-5,7.139-7.851c0.764-2.854,0.805-6.092,0.145-9.712 C546.782,404.25,546.115,401.725,545.451,400.298z"/>
+                                </g>
+                            </svg>
+                        </i>
+                    </a>
+                    <a href="#" class="footer-social__link">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="169.063px" height="169.063px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063; fill: #908e8f;">
+                                <g>
+                                    <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752 c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407 c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752 c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+                                    <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561 C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561 c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+                                    <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78 c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78 C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+                                </g>
+                            </svg>
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<div id="callback-modal" style="display: none;">
+    <div class="modal__close" data-fancybox-close></div>
+    <div class="callback__modal modal">
+        <div class="modal__title">Оставьте заявку</div>
+        <div class="modal__subtitle">Мы свяжемся с вами в ближайшее время</div>
+        <div class="order__column">
+            <form action="#" class="order__form">
+                <div class="order__top">
+                    <label class="order__label">
+                        <div class="order__icon">
+                            <img src="images/icons/man.svg" alt="">
+                            <img src="images/icons/man-active.svg" alt="">
+                        </div>
+                        <input type="text" name="name" class="order__field field" placeholder="Александ">
+                    </label>
+                    <label class="order__label">
+                        <div class="order__icon">
+                            <img src="images/icons/phone.svg" alt="">
+                            <img src="images/icons/phone-active.svg" alt="">
+                        </div>
+                        <input type="text" name="phone" class="order__field field phone-mask" placeholder="Номер телефона">
+                    </label>
+                </div>
+                <div class="order__bottom">
+                    <button class="modal__btn btn">Заказать консультацию</button>
+                    <div class="agreement">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных.</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div><!-- end callback-modal -->
+
+<script src="libs/mask/jquery.maskedinput.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.min.js"></script>
+<script src="libs/fullpage/fullpage.js"></script>
+<script src="libs/swiper/swiper.min.js"></script>
+<script src="libs/number/jquery.animateNumber.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
