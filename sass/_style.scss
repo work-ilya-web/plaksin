@@ -1882,6 +1882,13 @@ video.background-box {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+}
+
+.fp-section.active .main__right_case-bg {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition-delay: 1.2s;
 }
 
 .main__right_case-bg img {
@@ -3730,6 +3737,7 @@ video.background-box {
   width: 100% !important;
   -webkit-transform: none !important;
   transform: none !important;
+  overflow: hidden;
 }
 
 .fullpage-wrapper .fp-section {

@@ -1796,7 +1796,17 @@ video.background-box {
   height: 100vh;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  opacity: 0; }
+
+.fp-section.active .main__right_case-bg {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  transition-delay: 1.2s; }
 
 .main__right_case-bg img {
   -o-object-fit: cover;
@@ -3472,7 +3482,8 @@ video.background-box {
   width: 100% !important;
   -webkit-transform: none !important;
   -ms-transform: none !important;
-  transform: none !important; }
+  transform: none !important;
+  overflow: hidden; }
 
 .fullpage-wrapper .fp-section {
   width: 100% !important;
