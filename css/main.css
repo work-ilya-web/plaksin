@@ -438,7 +438,20 @@ p {
   width: 100%;
   left: 0px;
   top: 0px;
-  z-index: 1000; }
+  z-index: 1000;
+  opacity: 0;
+  -webkit-transform: translateY(-40px);
+  -ms-transform: translateY(-40px);
+  transform: translateY(-40px); }
+
+.header.active {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s; }
 
 .header__logo {
   display: block;
@@ -779,7 +792,17 @@ p {
 .section-bg-icon {
   width: 35px;
   height: 35px;
-  position: absolute; }
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
+
+.section-bg-icon.active {
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 1 !important; }
 
 .section-bg-icon img {
   width: 100%;
@@ -3607,7 +3630,100 @@ video.background-box {
   position: relative;
   top: -21px; }
 
-.preloader__box svg {
+.preloader__point_big {
+  background: #CC404B;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  will-change: transform;
+  -webkit-transition: -webkit-transform 5s;
+  transition: -webkit-transform 5s;
+  -o-transition: transform 5s;
+  transition: transform 5s;
+  transition: transform 5s, -webkit-transform 5s;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: block;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  z-index: 999;
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+.preloader__point_big.active {
+  -webkit-transform: scale(400);
+  -ms-transform: scale(400);
+  transform: scale(400);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.preloader__point {
+  z-index: 1;
+  background: #CC404B;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  -webkit-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  display: block;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation: point  0.5s infinite ease-in-out;
+  animation: point  0.5s infinite ease-in-out; }
+
+@-webkit-keyframes point {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@keyframes point {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes point_active {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  to {
+    -webkit-transform: scale(300);
+    transform: scale(300); } }
+
+@keyframes point_active {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  to {
+    -webkit-transform: scale(300);
+    transform: scale(300); } }
+
+.preloader__box svg.logo {
   width: 167px;
   height: 62px;
   -o-object-fit: contain;
@@ -3620,21 +3736,9 @@ video.background-box {
 
 .preloader.hidden {
   opacity: 0;
-  -webkit-transition: opacity 1.0s, -webkit-transform 1.0s;
-  transition: opacity 1.0s, -webkit-transform 1.0s;
-  -o-transition: opacity 1.0s, transform 1.0s;
-  transition: opacity 1.0s, transform 1.0s;
-  transition: opacity 1.0s, transform 1.0s, -webkit-transform 1.0s; }
-
-.preloader.scale {
-  -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: opacity 1.0s, -webkit-transform 1.0s;
-  transition: opacity 1.0s, -webkit-transform 1.0s;
-  -o-transition: opacity 1.0s, transform 1.0s;
-  transition: opacity 1.0s, transform 1.0s;
-  transition: opacity 1.0s, transform 1.0s, -webkit-transform 1.0s; }
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s; }
 
 .preloader__logo {
   width: 139px;
