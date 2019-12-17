@@ -3514,6 +3514,13 @@ video.background-box {
   -o-transition-delay: .7s;
   transition-delay: .7s; }
 
+.fullpage-wrapper .fp-section.leaveSlide {
+  visibility: visible;
+  opacity: 0 !important;
+  -webkit-transform: translateX(-100px) !important;
+  -ms-transform: translateX(-100px) !important;
+  transform: translateX(-100px) !important; }
+
 .fullpage-wrapper .fp-section .fp-slidesContainer {
   width: 100% !important;
   /*-webkit-transform: none !important;

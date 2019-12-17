@@ -3760,6 +3760,11 @@ video.background-box {
   transition: all .7s ease-in-out;
   transition-delay: .7s;
 }
+.fullpage-wrapper .fp-section.leaveSlide {
+  visibility: visible;
+  opacity: 0 !important;
+  transform: translateX(-100px) !important;
+}
 
 .fullpage-wrapper .fp-section .fp-slidesContainer {
   width: 100% !important;

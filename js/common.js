@@ -168,12 +168,6 @@ $(document).ready(function () {
 	        return false;
 	    });
 	}
-    
-
-
-
-	
-
 });
 
 $(document).ready(function () {
@@ -184,7 +178,7 @@ $(document).ready(function () {
 	
 	$('#fullpage').fullpage({
 		lockAnchors: false,
-		anchors: ['section1', 'section2', 'section5', 'section7', 'section8', 'section9', 'section11', 'section12'],
+		anchors: ['b-section1', 'b-section2', 'b-section3', 'b-section4', 'b-section5', 'b-section6', 'b-section7', 'b-section8', 'b-section9', 'b-section10', 'b-section11', 'b-section12'],
 		menu: '#menu',
         navigation: true,
         controlArrows: false,
@@ -202,6 +196,9 @@ $(document).ready(function () {
 		    $('.out-total').text(total);
 		},
 		onLeave: function (origin, destination, direction, anchorLink, index) {
+
+			$('.section').removeClass('leaveSlide');
+			$('[data-anchor='+origin.anchor+']').addClass('leaveSlide');
 
             var leavingSection = this;
             if (destination.index == 0) {
